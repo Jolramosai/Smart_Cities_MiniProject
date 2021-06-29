@@ -1,0 +1,140 @@
+
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #2b81e4;
+    --secondary-color: #eee;
+    --white-color: #fff;
+    --grey-color: #555;
+    --light-grey-color: #777;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+}
+
+.content {
+    height:500px;
+    background: linear-gradient(rgba(230, 255, 53,0.5),
+    rgba(230, 255, 53,0.3));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_top{
+    height:150px;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_bottom{
+    height:50px;
+    background: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-size: 400%;
+    color: var(--primary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 0px;
+    height: 150px;
+    background-size: cover;
+    text-align: center;
+}
+
+.login {
+    display: block;
+    width: 50%;
+    padding: 0 px;
+    text-align: center;
+}
+
+.info {
+    width: 50%;
+    padding-top: 5%;
+    padding-left: 5%;
+    text-align: left;
+    font-size: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.subttile{
+    text-align: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.return {
+    font-size: 20px;
+}
+
+.box {
+    display:block;
+    margin: 2rem auto;
+    border:none;
+    padding:2rem;
+    font-size: 15px;
+  
+}
+
+#sendbutton{
+    height: 50px;
+    background-color: var(--primary-color);
+    font-size: 30px;
+}
+
+.box input{
+    width: 100%;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    background: linear-gradient(rgba(230, 255, 53,0.5),
+    rgba(230, 255, 53,0.3));
+}
+
+#statistics {
+    font-size: 15px;
+    display: none;
+}
+
+.chart{
+    width:40%;
+    height: 225px;
+    margin:20px;
+    background-color: var(--white-color);
+}
+
+#charts1{
+    display: none;
+}
+
+#charts2{
+    display: none;
+}
+

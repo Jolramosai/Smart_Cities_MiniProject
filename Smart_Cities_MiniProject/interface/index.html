@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Vollkorn:400,400i,600,700,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+   
+      <div class="logo_top">
+        <div class="row">
+          <div class="column">
+            <img src="images/aveiro.jfif" style="width:100%;height: 100%;">
+            <h1 class="subtitle"><a href="#" onClick="get_city_data('Aveiro')">Aveiro</a></h1></button>
+          </div>
+          <div class="column">
+            <img src="images/braga.jpg" style="width:100%;height: 100%;">
+            <h1 class="subtitle"><a href="#" onClick="get_city_data('Braga')">Braga</a></h1>
+
+          </div>
+          <div class="column">
+            <img src="images/porto.jfif" style="width:100%;height: 100%;">
+            <h1 class="subtitle"><a href="#" onClick="get_city_data('Porto')">Porto</a></h1>
+          </div>
+          <div class="column">
+            <img src="images/lisboa.jpg" style="width:100%;height: 100%;">
+            <h1 class="subtitle"><a href="#" onClick="get_city_data('Lisboa')">Lisboa</a></h1>
+          </div>
+          <div class="column">
+            <img src="images/faro.jpg"  style="width:100%;height:  100%;">
+            <h1 class="subtitle"><a href="#" onClick="get_city_data('Faro')">Faro</a></h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="initial" class="center content">
+          
+          <div class="info">
+            <h1>Monitorização e previsão dos níveis de ozono em portugal continental</h1>
+            <p>Este projeto prever variações no níveis de ozono em diferentes
+              localidades portuguesas.
+            </p>
+            <p>
+              A metodologia utilizada consiste na recolha dos valores de ozono de varias localidades 
+              num periodo de tempo juntamente com os titulos de notícias internacionais referentes
+              a estas cidades e ao país.
+            </p>
+          </div> 
+          
+          <div class="login">
+              <form id="contact" class="box">
+                <h1>Subscreva a nossa news letter</h1>
+                <input id="contactName" type="text" name="" placeholder="Nome">
+                <input id="contactEmail" type="text" name="" placeholder="Email">
+                <input id="sendbutton" type="submit" name="" value="submeter">
+              
+              </form>
+          </div>
+
+          
+        
+      </div>
+
+
+      <div id="statistics" class="center content">
+        
+      
+
+        
+      <div class="prevision">
+      <h1>Previsões dos valores de ozono para amanhã na cidade de <a id="city_value">Cidade</a></h1>
+      <h2>Variação relativamente aos niveis de ozono de hoje: <a id='abs_value'>1.5</a></h2>
+      <h2>Valor de ozono em ug : <a id='ug_value'>19</a></h2>  
+      </div>
+      
+    </div>
+
+      <div id="charts1" class="center content">
+        <div id="pollution_chart" class="chart past">
+
+        </div>
+
+        <div id="ngrams_chart" class="chart past">
+
+        </div>
+      </div>  
+      
+      <div id="charts2" class="center content">
+        <div id="ozone_chart" class="chart past">
+
+        </div>
+
+        <div id="variation_chart" class="chart past">
+
+        </div>
+      </div>  
+
+      <div class="logo_bottom">
+        <h1 class="return"><a href="#" onClick="go_to_initial_page()">Pagina inicial</a></h1>
+      </div>
+     
+
+     
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+   
+    <script src="https://code.jscharting.com/2.9.0/jscharting.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
